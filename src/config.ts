@@ -103,9 +103,57 @@ export const config = {
     ],
     features: {
         showGallery: true,
-        showProducts: false,
+        showProducts: true,
         showTestimonials: true,
         showFAQ: true,
         showStats: true
-    }
+    },
+    demoUser: {
+        whatsapp: "+529994105896",
+    },
+    gallery: [
+        {
+            image: "https://images.unsplash.com/photo-1511044392410-d023249079ea?q=80&w=2070&auto=format&fit=crop",
+            title: "Control de Plagas Residencial",
+            category: "Fumigación"
+        },
+        {
+            image: "https://images.unsplash.com/photo-1621905252507-b354bcadcabc?q=80&w=2070&auto=format&fit=crop",
+            title: "Sanitización Comercial",
+            category: "Limpieza"
+        },
+        {
+            image: "https://images.unsplash.com/photo-1587393821818-ee42781fb78d?q=80&w=2070&auto=format&fit=crop",
+            title: "Desinfección de Oficinas",
+            category: "Salud"
+        },
+        {
+            image: "https://images.unsplash.com/photo-1605640840605-14ac1855827b?q=80&w=2071&auto=format&fit=crop",
+            title: "Control de Termitas",
+            category: "Industrial"
+        }
+    ],
+    products: [
+        {
+            id: "1",
+            image: "https://images.unsplash.com/photo-1621905252507-b354bcadcabc?q=80&w=2070&auto=format&fit=crop",
+            name: "Gel Hormiguicida",
+            desc: "Fórmula profesional para el control total de hormigas en interiores y exteriores.",
+            price: "$350"
+        },
+        {
+            id: "2",
+            image: "https://images.unsplash.com/photo-1587393821818-ee42781fb78d?q=80&w=2070&auto=format&fit=crop",
+            name: "Cebo para Roedores",
+            desc: "Estuche de seguridad con cebo para el control efectivo de ratas y ratones.",
+            price: "$450"
+        },
+        {
+            id: "3",
+            image: "https://images.unsplash.com/photo-1605640840605-14ac1855827b?q=80&w=2071&auto=format&fit=crop",
+            name: "Trampa para Cucarachas",
+            desc: "Trampas adhesivas con atrayente sexual para monitoreo y control.",
+            price: "$250"
+        }
+    ]
 };

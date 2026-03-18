@@ -17,7 +17,7 @@ export function Gallery() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    {gallery.map((item, i) => (
+                    {config.gallery.map((item: { image: string; title: string; category: string }, i: number) => (
                         <motion.div
                             key={i}
                             initial={{ opacity: 0, scale: 0.95 }}

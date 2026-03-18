@@ -24,7 +24,7 @@ export function Products() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {products.map((product, i) => (
+                    {config.products.map((product: { id: string; image: string; name: string; desc: string; price: string }, i: number) => (
                         <motion.div
                             key={product.id}
                             initial={{ opacity: 0, y: 20 }}
