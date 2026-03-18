@@ -59,12 +59,12 @@ export const config = {
             title: "Fumigación Residencial",
             problem: "¿Insectos en tu cocina o habitaciones?",
             agitation: "Las plagas ponen en riesgo la salud de tu familia y mascotas.",
-            solve: "Protocolos seguros y sin olor para niños y mascotas.",
+            solve: "Protocolos seguros y sin olor para hogares con niños y mascotas.",
             price: "pricing.basic"
         },
         {
             id: "02",
-            icon: "termite",
+            icon: "🦂",
             title: "Control de Termitas",
             problem: "¿Daño estructural en madera?",
             agitation: "Las termitas pueden devaluar tu propiedad en meses.",
@@ -113,47 +113,47 @@ export const config = {
     },
     gallery: [
         {
-            image: "https://images.unsplash.com/photo-1511044392410-d023249079ea?q=80&w=2070&auto=format&fit=crop",
-            title: "Control de Plagas Residencial",
-            category: "Fumigación"
+            image: "https://images.unsplash.com/photo-1587393821818-ee42781fb78d?q=80&w=2070&auto=format&fit=crop",
+            title: "Control de Hormigas",
+            category: "Residencial"
+        },
+        {
+            image: "https://images.unsplash.com/photo-1590682847055-6603f0f01ba3?q=80&w=2070&auto=format&fit=crop",
+            title: "Control de Roedores",
+            category: "Comercial"
+        },
+        {
+            image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2000&auto=format&fit=crop",
+            title: "Fumigación Industrial",
+            category: "Industrial"
         },
         {
             image: "https://images.unsplash.com/photo-1621905252507-b354bcadcabc?q=80&w=2070&auto=format&fit=crop",
-            title: "Sanitización Comercial",
-            category: "Limpieza"
-        },
-        {
-            image: "https://images.unsplash.com/photo-1587393821818-ee42781fb78d?q=80&w=2070&auto=format&fit=crop",
-            title: "Desinfección de Oficinas",
+            title: "Desinfección Certificada",
             category: "Salud"
-        },
-        {
-            image: "https://images.unsplash.com/photo-1605640840605-14ac1855827b?q=80&w=2071&auto=format&fit=crop",
-            title: "Control de Termitas",
-            category: "Industrial"
         }
     ],
     products: [
         {
             id: "1",
-            image: "https://images.unsplash.com/photo-1621905252507-b354bcadcabc?q=80&w=2070&auto=format&fit=crop",
-            name: "Gel Hormiguicida",
-            desc: "Fórmula profesional para el control total de hormigas en interiores y exteriores.",
+            image: "https://images.unsplash.com/photo-1587393821818-ee42781fb78d?q=80&w=2070&auto=format&fit=crop",
+            name: "Gel Profesional",
+            desc: "Fórmula de alta atracción para el control total de colonias de hormigas.",
             price: "$350"
         },
         {
             id: "2",
-            image: "https://images.unsplash.com/photo-1587393821818-ee42781fb78d?q=80&w=2070&auto=format&fit=crop",
-            name: "Cebo para Roedores",
-            desc: "Estuche de seguridad con cebo para el control efectivo de ratas y ratones.",
+            image: "https://images.unsplash.com/photo-1590682847055-6603f0f01ba3?q=80&w=2070&auto=format&fit=crop",
+            name: "Estación de Cebo",
+            desc: "Protección segura para exteriores contra roedores, ideal para comercios.",
             price: "$450"
         },
         {
             id: "3",
-            image: "https://images.unsplash.com/photo-1605640840605-14ac1855827b?q=80&w=2071&auto=format&fit=crop",
-            name: "Trampa para Cucarachas",
-            desc: "Trampas adhesivas con atrayente sexual para monitoreo y control.",
-            price: "$250"
+            image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2000&auto=format&fit=crop",
+            name: "Líquido Concentrado",
+            desc: "Solución residual para el control preventivo de insectos rastreros.",
+            price: "$580"
         }
     ]
 };

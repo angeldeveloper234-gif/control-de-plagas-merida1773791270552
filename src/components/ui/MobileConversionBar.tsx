@@ -15,7 +15,7 @@ export const MobileConversionBar: React.FC = () => {
                 href={`tel:${phone}`}
                 className="flex items-center justify-center gap-2 text-white border-r border-white/10 active:bg-white/5 transition-colors"
             >
-                <Phone size={18} className="text-[#E07B2A]" />
+                <Phone size={18} className="text-[#2563EB]" />
                 <span className="text-xs font-bold uppercase tracking-widest">Llamar</span>
             </a>
             <a
@@ -24,7 +24,7 @@ export const MobileConversionBar: React.FC = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 text-white active:bg-white/5 transition-colors"
             >
-                <MessageSquare size={18} className="text-[#E07B2A]" />
+                <MessageSquare size={18} className="text-[#2563EB]" />
                 <span className="text-xs font-bold uppercase tracking-widest">WhatsApp</span>
             </a>
         </motion.div>

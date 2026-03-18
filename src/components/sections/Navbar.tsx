@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Menu, X, Hammer } from "lucide-react";
+import { Menu, X, Bug } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { config } from "@/config";
@@ -19,8 +19,8 @@ export function Navbar() {
         <nav className="fixed top-0 left-0 right-0 z-40 bg-[#111010]/90 backdrop-blur-sm border-b border-white/5">
             <div className="container mx-auto px-6 h-20 flex items-center justify-between">
                 <a href="#" className="flex items-center gap-3">
-                    <div className="w-9 h-9 bg-[#E07B2A] flex items-center justify-center">
-                        <Hammer size={18} className="text-black" />
+                    <div className="w-9 h-9 bg-[#2563EB] flex items-center justify-center">
+                        <Bug size={18} className="text-white" />
                     </div>
                     <span className="text-xl font-display font-bold tracking-widest text-white uppercase">
                         {branding.logo}
@@ -33,14 +33,14 @@ export function Navbar() {
                         <a
                             key={link.href}
                             href={link.href}
-                            className="text-xs font-sans tracking-[0.2em] text-zinc-400 hover:text-[#E07B2A] transition-colors uppercase font-bold"
+                            className="text-xs font-sans tracking-[0.2em] text-zinc-400 hover:text-[#2563EB] transition-colors uppercase font-bold"
                         >
                             {link.label}
                         </a>
                     ))}
                     <Button
                         variant="outline"
-                        className="border-[#E07B2A] text-[#E07B2A] hover:bg-[#E07B2A] hover:text-white rounded-none px-8 tracking-widest text-xs"
+                        className="border-[#2563EB] text-[#2563EB] hover:bg-[#2563EB] hover:text-white rounded-none px-8 tracking-widest text-xs"
                         onClick={() => window.location.href = '#contact'}
                     >
                         PRESUPUESTO GRATIS
@@ -69,7 +69,7 @@ export function Navbar() {
                             <a
                                 key={link.href}
                                 href={link.href}
-                                className="text-sm font-sans tracking-widest text-zinc-400 hover:text-[#E07B2A] uppercase font-bold"
+                                className="text-sm font-sans tracking-widest text-zinc-400 hover:text-[#2563EB] uppercase font-bold"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {link.label}
@@ -77,7 +77,7 @@ export function Navbar() {
                         ))}
                         <Button
                             variant="default"
-                            className="bg-[#E07B2A] text-white rounded-none tracking-widest text-xs"
+                            className="bg-[#2563EB] text-white rounded-none tracking-widest text-xs"
                             onClick={() => { window.location.href = '#contact'; setIsOpen(false); }}
                         >
                             PRESUPUESTO GRATIS

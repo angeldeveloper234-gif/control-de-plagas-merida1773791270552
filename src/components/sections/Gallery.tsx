@@ -8,11 +8,11 @@ export function Gallery() {
         <section id="gallery" className="py-32 bg-[#0A0909] relative overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="mb-20">
-                    <p className="text-[#E07B2A] font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
+                    <p className="text-[#2563EB] font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
                         Nuestro Portafolio
                     </p>
                     <h2 className="text-4xl md:text-6xl font-display text-white tracking-widest uppercase">
-                        PROYECTOS <span className="text-[#E07B2A]">RECIENTES</span>
+                        PROYECTOS <span className="text-[#2563EB]">RECIENTES</span>
                     </h2>
                 </div>
 
@@ -34,7 +34,7 @@ export function Gallery() {
                             
                             {/* Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-8 flex flex-col justify-end">
-                                <span className="text-[#E07B2A] text-[10px] uppercase tracking-[0.3em] font-black mb-2">
+                                <span className="text-[#2563EB] text-[10px] uppercase tracking-[0.3em] font-black mb-2">
                                     {item.category}
                                 </span>
                                 <h4 className="text-white font-display text-2xl tracking-widest uppercase">
@@ -43,7 +43,7 @@ export function Gallery() {
                             </div>
 
                             {/* Corner detail */}
-                            <div className="absolute top-4 right-4 w-8 h-8 border-t border-r border-white/20 group-hover:border-[#E07B2A] transition-colors duration-500" />
+                            <div className="absolute top-4 right-4 w-8 h-8 border-t border-r border-white/20 group-hover:border-[#2563EB] transition-colors duration-500" />
                         </motion.div>
                     ))}
                 </div>

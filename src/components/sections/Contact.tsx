@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Clock, Wrench } from "lucide-react";
+import { MapPin, Phone, Clock, ShieldCheck } from "lucide-react";
 import { config } from "@/config";
 
 const schema = z.object({
@@ -37,16 +37,16 @@ export function Contact() {
 
                     {/* Left: Info */}
                     <div>
-                        <p className="text-[#E07B2A] font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
+                        <p className="text-[#2563EB] font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
                             Contacto Directo
                         </p>
                         <h2 className="text-5xl md:text-6xl font-display text-white mb-10 tracking-widest leading-tight">
-                            COTIZACIÓN <span className="text-[#E07B2A]">SIN COSTO</span>
+                            COTIZACIÓN <span className="text-[#2563EB]">SIN COSTO</span>
                         </h2>
 
                         <div className="space-y-8 mb-12">
                             <div className="flex items-start gap-4">
-                                <MapPin className="w-5 h-5 text-[#E07B2A] mt-1 flex-shrink-0" />
+                                <MapPin className="w-5 h-5 text-[#2563EB] mt-1 flex-shrink-0" />
                                 <div>
                                     <h4 className="text-white font-sans uppercase tracking-widest text-xs mb-1 font-black">Ubicación</h4>
                                     <p className="text-zinc-400 text-sm">{localAnchor}, {city}</p>
@@ -54,14 +54,14 @@ export function Contact() {
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
-                                <Phone className="w-5 h-5 text-[#E07B2A] mt-1 flex-shrink-0" />
+                                <Phone className="w-5 h-5 text-[#2563EB] mt-1 flex-shrink-0" />
                                 <div>
                                     <h4 className="text-white font-sans uppercase tracking-widest text-xs mb-1 font-black">Teléfono / WhatsApp</h4>
                                     <p className="text-zinc-400 text-sm">{demoUser.whatsapp}</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
-                                <Clock className="w-5 h-5 text-[#E07B2A] mt-1 flex-shrink-0" />
+                                <Clock className="w-5 h-5 text-[#2563EB] mt-1 flex-shrink-0" />
                                 <div>
                                     <h4 className="text-white font-sans uppercase tracking-widest text-xs mb-1 font-black">Horario de Atención</h4>
                                     <p className="text-zinc-400 text-sm">Lunes a Sábado: 8:00 – 19:00</p>
@@ -71,17 +71,17 @@ export function Contact() {
                         </div>
 
                         {/* Differentiators */}
-                        <div className="border border-[#E07B2A]/20 p-6 bg-[#E07B2A]/5">
-                            <p className="text-[#E07B2A] text-xs font-black uppercase tracking-widest mb-4">Por qué elegir nuestro taller</p>
+                        <div className="border border-[#2563EB]/20 p-6 bg-[#2563EB]/5">
+                            <p className="text-[#2563EB] text-xs font-black uppercase tracking-widest mb-4">Por qué elegirnos</p>
                             <ul className="space-y-3">
                                 {[
-                                    "Presupuesto gratis y sin compromiso",
-                                    "Garantía escrita en todos los trabajos",
-                                    "Materiales de calidad comprobada",
-                                    "Más de 850 proyectos completados",
+                                    "Inspección gratuita y sin compromiso",
+                                    "Garantía certificada por escrito",
+                                    "Productos seguros para tu familia",
+                                    "Servicio rápido en menos de 24h",
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-center gap-3 text-sm text-zinc-400 font-sans">
-                                        <Wrench size={12} className="text-[#E07B2A] flex-shrink-0" />
+                                        <ShieldCheck size={12} className="text-[#2563EB] flex-shrink-0" />
                                         {item}
                                     </li>
                                 ))}
@@ -118,7 +118,7 @@ export function Contact() {
                             <div className="space-y-1">
                                 <select
                                     {...register("service")}
-                                    className="w-full bg-transparent border-b-2 border-zinc-800 py-4 text-zinc-400 focus:outline-none focus:border-[#E07B2A] transition-colors text-sm tracking-widest font-sans appearance-none cursor-pointer"
+                                    className="w-full bg-transparent border-b-2 border-zinc-800 py-4 text-zinc-400 focus:outline-none focus:border-[#2563EB] transition-colors text-sm tracking-widest font-sans appearance-none cursor-pointer"
                                 >
                                     <option value="" className="bg-zinc-950">TIPO DE SERVICIO</option>
                                     {services.map((s) => (
@@ -133,7 +133,7 @@ export function Contact() {
                                 <textarea
                                     {...register("message")}
                                     rows={4}
-                                    className="w-full bg-transparent border-b-2 border-zinc-800 py-4 text-white focus:outline-none focus:border-[#E07B2A] transition-colors resize-none placeholder:text-zinc-700 text-sm tracking-widest font-sans"
+                                    className="w-full bg-transparent border-b-2 border-zinc-800 py-4 text-white focus:outline-none focus:border-[#2563EB] transition-colors resize-none placeholder:text-zinc-700 text-sm tracking-widest font-sans"
                                     placeholder="DESCRIBE EL TRABAJO O PROBLEMA"
                                 />
                                 {errors.message && <span className="text-xs text-red-500">{errors.message.message}</span>}
@@ -141,7 +141,7 @@ export function Contact() {
 
                             <Button
                                 type="submit"
-                                className="w-full bg-[#E07B2A] text-white hover:brightness-110 rounded-none py-5 uppercase tracking-[0.2em] text-xs font-black transition-all duration-300 shadow-[0_10px_30px_-10px_rgba(224,123,42,0.4)]"
+                                className="w-full bg-[#2563EB] text-white hover:bg-[#1d4ed8] rounded-none py-5 uppercase tracking-[0.2em] text-xs font-black transition-all duration-300 shadow-[0_10px_30px_-10px_rgba(37,99,235,0.4)]"
                                 disabled={isSubmitting}
                             >
                                 {isSubmitting ? "ENVIANDO..." : "SOLICITAR PRESUPUESTO GRATIS"}

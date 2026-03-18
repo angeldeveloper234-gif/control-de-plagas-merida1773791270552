@@ -29,28 +29,28 @@ export function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     return (
-        <section id="faq" className="py-32 bg-[#0D0C0C] text-white relative border-t border-white/5">
+        <section id="faq" className="py-32 bg-[#0A0909] text-white relative border-t border-white/5">
             <div className="container mx-auto px-6 max-w-4xl">
                 <div className="text-center mb-20">
-                    <p className="text-[#E07B2A] font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
+                    <p className="text-[#2563EB] font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
                         Despeja tus dudas
                     </p>
                     <h2 className="text-4xl md:text-6xl font-display tracking-widest uppercase">
-                        Preguntas <span className="text-[#E07B2A]">Frecuentes</span>
+                        Preguntas <span className="text-[#2563EB]">Frecuentes</span>
                     </h2>
                 </div>
 
                 <div className="space-y-4">
                     {faqs.map((faq, i) => (
-                        <div key={i} className="border border-white/5 bg-[#111010] hover:border-[#E07B2A]/30 transition-colors">
+                        <div key={i} className="border border-white/5 bg-[#111010] hover:border-[#2563EB]/30 transition-colors">
                             <button
                                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                                 className="flex items-center justify-between w-full p-8 text-left transition-colors group"
                             >
-                                <span className="text-lg font-sans font-bold tracking-wider uppercase group-hover:text-[#E07B2A] transition-colors pr-8">
+                                <span className="text-lg font-sans font-bold tracking-wider uppercase group-hover:text-[#2563EB] transition-colors pr-8">
                                     {faq.q}
                                 </span>
-                                <div className="text-[#E07B2A] bg-[#E07B2A]/10 p-2">
+                                <div className="text-[#2563EB] bg-[#2563EB]/10 p-2">
                                     {openIndex === i ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                                 </div>
                             </button>

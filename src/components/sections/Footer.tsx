@@ -17,15 +17,15 @@ export function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-end border-t border-white/5 pt-8">
                     <div className="mb-8 md:mb-0">
                         <p className="text-zinc-500 text-sm font-sans mb-1">
-                            <span className="text-[#E07B2A] font-black tracking-wider">{branding.logo}</span> — {branding.trade}
+                            <span className="text-[#2563EB] font-black tracking-wider">{branding.logo}</span> — {branding.trade}
                         </p>
                         <p className="text-zinc-600 text-[10px] uppercase tracking-[0.2em]">
                             © {new Date().getFullYear()} {branding.name}. Todos los derechos reservados.
                         </p>
                     </div>
                     <div className="flex gap-8">
-                        <a href="/privacy" className="text-zinc-500 hover:text-[#E07B2A] text-[10px] uppercase tracking-widest transition-colors font-bold">Aviso de Privacidad</a>
-                        <a href="/terms" className="text-zinc-500 hover:text-[#E07B2A] text-[10px] uppercase tracking-widest transition-colors font-bold">Términos</a>
+                        <a href="/privacy" className="text-zinc-500 hover:text-[#2563EB] text-[10px] uppercase tracking-widest transition-colors font-bold">Aviso de Privacidad</a>
+                        <a href="/terms" className="text-zinc-500 hover:text-[#2563EB] text-[10px] uppercase tracking-widest transition-colors font-bold">Términos</a>
                     </div>
                 </div>
             </div>

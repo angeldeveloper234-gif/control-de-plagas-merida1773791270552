@@ -11,15 +11,15 @@ export function Products() {
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
                     <div>
-                        <p className="text-[#E07B2A] font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
+                        <p className="text-[#2563EB] font-sans text-xs tracking-[0.4em] uppercase font-black mb-4">
                             Catálogo de Taller
                         </p>
                         <h2 className="text-4xl md:text-6xl font-display text-white tracking-widest uppercase mb-0">
-                            PRODUCTOS <span className="text-[#E07B2A]">DISPONIBLES</span>
+                            PRODUCTOS <span className="text-[#2563EB]">DISPONIBLES</span>
                         </h2>
                     </div>
                     <Button variant="outline" className="border-white/10 text-white rounded-none tracking-widest text-[10px] h-12">
-                        VER TODO EL CATÁLOGO <ArrowRight className="ml-2 w-4 h-4 text-[#E07B2A]" />
+                        VER TODO EL CATÁLOGO <ArrowRight className="ml-2 w-4 h-4 text-[#2563EB]" />
                     </Button>
                 </div>
 
@@ -31,7 +31,7 @@ export function Products() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
-                            className="bg-[#111010] border border-white/5 flex flex-col group hover:border-[#E07B2A]/30 transition-all duration-500"
+                            className="bg-[#111010] border border-white/5 flex flex-col group hover:border-[#2563EB]/30 transition-all duration-500"
                         >
                             <div className="aspect-square overflow-hidden relative">
                                 <img
@@ -39,7 +39,7 @@ export function Products() {
                                     alt={product.name}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
-                                <div className="absolute top-6 left-6 bg-[#E07B2A] text-white font-display text-xl px-4 py-1 tracking-widest">
+                                <div className="absolute top-6 left-6 bg-[#2563EB] text-white font-display text-xl px-4 py-1 tracking-widest">
                                     {product.price}
                                 </div>
                             </div>
@@ -53,7 +53,7 @@ export function Products() {
                                 </p>
                                 
                                 <Button 
-                                    className="w-full bg-white/5 hover:bg-[#E07B2A] text-white hover:text-black transition-all duration-500 rounded-none h-14 tracking-[0.2em] font-black text-[10px] uppercase"
+                                    className="w-full bg-white/5 hover:bg-[#2563EB] text-white hover:text-white transition-all duration-500 rounded-none h-14 tracking-[0.2em] font-black text-[10px] uppercase"
                                     onClick={() => window.location.href = `https://wa.me/${config.demoUser.whatsapp.replace('+', '')}?text=Hola, me interesa el producto: ${product.name}`}
                                 >
                                     Consutar por WhatsApp <ShoppingCart className="ml-2 w-4 h-4" />

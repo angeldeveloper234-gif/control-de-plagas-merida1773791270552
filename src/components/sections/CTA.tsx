@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Hammer, ShieldCheck, Clock } from "lucide-react";
+import { ArrowRight, Bug, ShieldCheck, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { config } from "@/config";
 
@@ -9,12 +9,12 @@ export function CTA() {
     return (
         <section className="py-32 bg-[#111010] text-white relative overflow-hidden border-t border-white/5">
             {/* Orange glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#E07B2A]/8 blur-[100px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#2563EB]/8 blur-[100px] rounded-full pointer-events-none" />
 
             {/* Subtle diagonal lines */}
             <div className="absolute inset-0 opacity-[0.03]"
                 style={{
-                    backgroundImage: `repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(224,123,42,1) 10px, rgba(224,123,42,1) 11px)`
+                    backgroundImage: `repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(37,99,235,1) 10px, rgba(37,99,235,1) 11px)`
                 }}
             />
 
@@ -25,11 +25,11 @@ export function CTA() {
                     viewport={{ once: true }}
                     className="max-w-4xl mx-auto"
                 >
-                    <Hammer size={48} className="mx-auto mb-8 text-[#E07B2A] opacity-60" />
+                    <Bug size={48} className="mx-auto mb-8 text-[#2563EB] opacity-60" />
 
                     <h2 className="text-5xl md:text-8xl font-display mb-10 leading-[0.9] tracking-widest">
                         ¿LISTO PARA UN TRABAJO{" "}
-                        <span className="text-[#E07B2A]">BIEN HECHO?</span>
+                        <span className="text-[#2563EB]">BIEN HECHO?</span>
                     </h2>
 
                     <p className="text-xl md:text-2xl text-zinc-400 mb-16 font-sans font-light leading-relaxed max-w-2xl mx-auto">
@@ -41,10 +41,10 @@ export function CTA() {
                         {[
                             { icon: <ShieldCheck size={18} />, text: "Garantía Escrita" },
                             { icon: <Clock size={18} />, text: "Entrega en Tiempo" },
-                            { icon: <Hammer size={18} />, text: "Materiales de Calidad" },
+                            { icon: <Bug size={18} />, text: "Métodos Seguros" },
                         ].map((item, i) => (
                             <div key={i} className="flex items-center gap-2 text-zinc-400 text-sm font-sans">
-                                <span className="text-[#E07B2A]">{item.icon}</span>
+                                <span className="text-[#2563EB]">{item.icon}</span>
                                 {item.text}
                             </div>
                         ))}
@@ -53,7 +53,7 @@ export function CTA() {
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Button
                             size="lg"
-                            className="h-20 px-16 bg-[#E07B2A] text-white hover:brightness-110 rounded-none text-sm tracking-[0.3em] uppercase font-black transition-all duration-500 shadow-[0_20px_50px_-15px_rgba(224,123,42,0.5)]"
+                            className="h-20 px-16 bg-[#2563EB] text-white hover:bg-[#1d4ed8] rounded-none text-sm tracking-[0.3em] uppercase font-black transition-all duration-500 shadow-[0_20px_50px_-15px_rgba(37,99,235,0.5)]"
                             onClick={() => window.location.href = '#contact'}
                         >
                             Solicitar Presupuesto Gratis <ArrowRight className="ml-4 w-5 h-5" />
